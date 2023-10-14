@@ -1,12 +1,12 @@
 import {
   LexicalComposer,
-  type InitialConfigType,
-} from "@lexical/react/LexicalComposer";
-import { ContentEditable } from "@lexical/react/LexicalContentEditable";
-import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary";
-import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
-import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
-import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
+} from "@lexical/react/LexicalComposer.prod.js";
+import { ContentEditable } from "@lexical/react/LexicalContentEditable.prod.js";
+import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary.prod.js";
+import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin.prod.js";
+import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin.prod.js";
+import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin.prod.js";
+import type { InitialConfigType } from "@lexical/react/LexicalComposer";
 
 type LexicalEditorProps = {};
 
@@ -28,7 +28,6 @@ const initial = {
   namespace: "lexical-editor",
   theme: {},
   nodes: [],
-  editorState: "",
   onError: () => {
     console.error("There was an error");
   }
