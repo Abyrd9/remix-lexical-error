@@ -1,12 +1,29 @@
-import {
-  LexicalComposer,
-} from "@lexical/react/LexicalComposer.prod.js";
-import { ContentEditable } from "@lexical/react/LexicalContentEditable.prod.js";
-import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary.prod.js";
-import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin.prod.js";
-import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin.prod.js";
-import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin.prod.js";
+// import { type InitialConfigType, LexicalComposer } from "@lexical/react/LexicalComposer"
+// import { ContentEditable } from "@lexical/react/LexicalContentEditable"
+// import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary"
+// import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin"
+// import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin"
+// import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin"
+
+/*
+  1. Comment out the below.
+  2. Uncomment the above.
+  3. Uncomment out the serverDependenciesToBundle on remix.config.js
+*/
+
+import LexicalComposerPkg from "@lexical/react/LexicalComposer.js";
+import ContentEditablePkg from "@lexical/react/LexicalContentEditable.js";
+import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary.js";
+import HistoryPluginPkg from "@lexical/react/LexicalHistoryPlugin.js";
+import OnChangePluginPkg from "@lexical/react/LexicalOnChangePlugin.js";
+import RichTextPluginPkg from "@lexical/react/LexicalRichTextPlugin.js";
 import type { InitialConfigType } from "@lexical/react/LexicalComposer";
+
+const LexicalComposer = LexicalComposerPkg.LexicalComposer;
+const ContentEditable = ContentEditablePkg.ContentEditable;
+const HistoryPlugin = HistoryPluginPkg.HistoryPlugin;
+const OnChangePlugin = OnChangePluginPkg.OnChangePlugin;
+const RichTextPlugin = RichTextPluginPkg.RichTextPlugin;
 
 type LexicalEditorProps = {};
 
